@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const movies=[
+            {
+                title:'Amadeus',
+                score:99
+            },
+            {
+                title:'Parasite',
+                score:95
+            },
+            {
+                title:'Alien',
+                score:90
+            }
+        ]
+
+        const newMovies=movies.map(movie=>(
+            `${movie.title} - ${movie.score}`
+        ));
+        
+        console.log(newMovies);
+    </script>
+</body>
+</html>
