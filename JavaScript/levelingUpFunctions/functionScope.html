@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let totalEggs = 0;
+        function collectEggs() {
+            totalEggs = 6;
+        }
+        console.log(totalEggs);
+
+        //Block Scope
+
+        let radius = 8;
+        if (radius > 0) {
+            const PI = 3.14;
+            let circ = 2 + PI * radius;
+        }
+
+        console.log(radius); //8
+        console.log(PI); //NOT DEFINED
+        console.log(circ); //NOT DEFINED
+
+        //Lexical Scope
+        function bankRobbery(){
+            const heroes = ['Spiderman','Wolverine','Black Panther','Catwoman'];
+            function cryForHelp(){
+                function  inner(){
+                    for(let hero of heroes){
+                        console.log(`PLEASE HELP US, ${hero.toUpperCase}`);
+                    }
+                }
+                inner();
+            }
+            cryForHelp();
+        }
+
+    </script>
+</body>
+
+</html>

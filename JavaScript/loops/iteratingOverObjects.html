@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const testScores={
+            keenan:80,
+            damon:67,
+            kim:89,
+            shawn:91,
+            marlon:72
+        }
+
+        for(let person in testScores){
+            console.log(`${person} scored ${testScores[person]}`);
+        }
+
+
+        let total=0;
+        for(let scores of Object.values(testScores)){
+            total+=score;
+        }
+        console.log(`Total: ${total}`);
+    </script>
+</body>
+</html>
