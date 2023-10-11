@@ -1,0 +1,15 @@
+section{
+    width: 80%;
+    height: 800px;
+    background-color: purple;
+    margin: 0 auto;
+    /*background-image: url('https://t3.ftcdn.net/jpg/04/12/82/16/360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg');
+    background-size: cover;
+    background-position: bottom;*/
+    background: url('https://t3.ftcdn.net/jpg/04/12/82/16/360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg') bottom/cover;
+}
+
+h1{
+    font-size: 100px;
+    color:blue;
+}
